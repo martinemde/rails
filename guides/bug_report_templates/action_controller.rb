@@ -45,7 +45,7 @@ class TestControllerTest < ActionController::TestCase
   end
 
   def test_returns_success
-    get :index
+    get :index, path_params: "broken"
     assert_response :success
   end
 
